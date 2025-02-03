@@ -36,7 +36,7 @@ public class UserController {
     public String showRegistrationForm(Model model){
         UserEntity userEntity = new UserEntity();
         model.addAttribute("user", userEntity);
-        return "register";
+        return "index";
     }
     @Operation(
             summary = "User Registration",
